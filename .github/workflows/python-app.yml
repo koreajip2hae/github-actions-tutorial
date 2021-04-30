@@ -35,4 +35,5 @@ jobs:
       run: |
         echo "Hi!!"
     - name: Test python -h
+      run: |  
         python3 -h
