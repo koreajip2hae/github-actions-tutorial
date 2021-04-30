@@ -1,0 +1,27 @@
+# 
+#
+
+name: yes24_crawler
+
+
+on:
+  push:
+    branches: [ master ]
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: action/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Test python
+      run: |
+        python3 hello_world.py
+
+    
